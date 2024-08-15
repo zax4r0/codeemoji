@@ -3,6 +3,11 @@
     "displayName": "CodeEmoji",
     "description": " Bring Your Code to Life with Emojis 🤓",
     "version": "0.0.1",
+    "author": {
+        "email": "zax4r0@gmail.com",
+        "name": "zax4r0",
+        "url": "https://github.com/zax4r0"
+    },
     "engines": {
         "vscode": "^1.92.0"
     },
