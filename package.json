@@ -3,7 +3,7 @@
     "displayName": "CodeEmoji",
     "description": " Bring Your Code to Life with Emojis 🤓",
     "version": "0.0.1",
-    "publisher": "zax4r0",
+    "publisher": "zax4r0-codeemoji",
     "icon": "images/icon.webp",
     "repository": {
         "url": "https://github.com/zax4r0/codeemoji"
@@ -22,8 +22,7 @@
         "Other"
     ],
     "activationEvents": [
-        "onStartupFinished",
-        "onLanguage:*"
+        "onStartupFinished"
     ],
     "main": "./dist/extension.js",
     "contributes": {
