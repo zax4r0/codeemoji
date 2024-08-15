@@ -5,6 +5,9 @@
     "version": "0.0.1",
     "publisher": "zax4r0",
     "icon": "images/icon.png",
+    "repository": {
+        "url": "https://github.com/zax4r0/codeemoji"
+    },
     "pricing": "Free",
     "author": {
         "email": "zax4r0@gmail.com",
