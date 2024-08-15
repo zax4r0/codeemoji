@@ -1,71 +1,92 @@
-# codeemoji README
+# VS Code Emoji Extension
 
-This is the README for your extension "codeemoji". After writing up a brief description, we recommend including the following sections.
+Welcome to the **VS Code Emoji Extension**! This extension allows you to enhance your development experience by managing and customizing emoji skin tones directly within Visual Studio Code. You can set your preferred skin tone, use emojis in your code, and more.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Set Emoji Skin Tone**: Choose your preferred emoji skin tone and see it reflected in the status bar.
+- **Quick Pick Menu**: Easily select from a variety of skin tones with corresponding emojis.
+- **Emoji Replacement**: Automatically replace text with emojis in your code.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+To install this extension, follow these steps:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+3. Search for `VS Code Emoji Extension`.
+4. Click `Install`.
 
-## Requirements
+## Usage
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Set Emoji Skin Tone
 
-## Extension Settings
+1. Click on the emoji icon in the status bar at the bottom-right corner of VS Code.
+2. A Quick Pick menu will appear with different skin tone options.
+3. Select your preferred skin tone from the list.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+The selected skin tone will be updated in the status bar, and all future emoji-related operations will use the chosen skin tone.
 
-For example:
+### Emojify Text
 
-This extension contributes the following settings:
+To replace text with emojis:
 
--   `myExtension.enable`: Enable/disable this extension.
--   `myExtension.thing`: Set to `blah` to do something.
+1. Highlight the text you want to convert.
+2. Use the command palette (`Ctrl+Shift+P`) and search for `Emojify Text`.
+3. The selected text will be replaced with the corresponding emoji.
 
-## Known Issues
+## Configuration
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+You can configure the emoji skin tone by modifying the `codeemoji.skinTone` setting:
 
-## Release Notes
+- **white**: Light skin tone (👍🏻)
+- **creamWhite**: Medium-Light skin tone (👍🏼)
+- **lightBrown**: Medium skin tone (👍🏽)
+- **darkBrown**: Medium-Dark skin tone (👍🏾)
+- **brown**: Dark skin tone (👍🏿)
+- **none**: No skin tone (👍)
 
-Users appreciate release notes as you update your extension.
+To change the setting:
 
-### 1.0.0
+1. Open the Command Palette (`Ctrl+Shift+P`).
+2. Type `Preferences: Open Settings (JSON)`.
+3. Add or modify the `codeemoji.skinTone` setting with your preferred value.
 
-Initial release of ...
+```json
+"codeemoji.skinTone": "lightBrown"
+```
 
-### 1.0.1
+## Emoji List
 
-Fixed issue #.
+Here are some of the emojis available:
 
-### 1.1.0
+- 😀 😃 😄 😁 😆 😅 😂 🤣 😊 😇
+- 🙃 🙂 🙃 🤗 🤔 🤐 🤨 🤩 🧐
+- 😎 🤓 🤠 🤡 🤥 🤒 🤕 🤗 🤔
+- 😍 🥰 😘 😗 😙 😚 😋 😛 😝
+- 🤑 🤤 🤤 😶 😶‍🌫️ 🙄 😮 🤐 🤔
+- 🤩 🥳 😎 😍 🤔 🤐 🤢 🤮 🤧
+- 😴 💤 😪 😫 😤 😠 😡 🤬 🤯
+- 😳 😱 😨 😰 😥 😢 😭 😓 😩
+- 😔 😕 🙁 ☹️ 😣 😖 😫 😩 😤
+- 😢 😭 😤 😠 😡 🤬 🤯 😳 🥵
+- 🥶 😱 😨 😰 😥 😢 😭 😓 😩
 
-Added features X, Y, and Z.
+For a more comprehensive list, refer to the Unicode Emoji List or [Emojipedia](https://emojipedia.org/).
 
----
+## Contributing
 
-## Following extension guidelines
+If you would like to contribute to the development of this extension, please follow these steps:
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+1. Fork the repository on GitHub.
+2. Clone your fork locally.
+3. Make your changes and test thoroughly.
+4. Create a pull request with a clear description of the changes.
 
--   [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+## License
 
-## Working with Markdown
+This extension is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+## Feedback
 
--   Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
--   Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
--   Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
--   [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
--   [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+If you have any feedback, issues, or feature requests, please open an issue on the [GitHub repository](https://github.com/yourusername/vscode-emoji-extension).
